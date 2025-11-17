@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+
+    background-image: url(./img/bg-2.jpg);
+    background-blend-mode: hard-light;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.login {
+    display: inline-block;
+    height: auto;
+    width: 400px;
+    border: 1px solid black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    padding: 15px;
+    background-color: rgba(240, 248, 255, 0.301);
+    border: none;
+    backdrop-filter: blur(5px);
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: black;
+    font-size: 17px;
+    font-family: inherit;
+    margin-bottom: 15px;
+}
+
+.head>h3:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+}
+
+tr {
+    padding: 10px;
+}
+
+.in {
+    display: flex;
+    padding-left: 15px;
+}
+
+input {
+    width: 250px;
+    padding: 7px;
+    border-radius: 50px;
+    border: none;
+    text-align: start;
+    padding-left: 10px;
+    padding-right: 30px;
+    border: none;
+    background-color: rgba(240, 248, 255, 0.352);
+    transition: transform 0.2s ease;
+}
+
+input::placeholder {
+    color: black;
+    letter-spacing: 2px;
+}
+
+input:hover {
+    transform: scale(1.05);
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+button {
+    width: 25%;
+    padding: 12px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    letter-spacing: 1.5px;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.forgot {
+    display: flex;
+    justify-content: end;
+}
+
+.forgot-prompt {
+    color: black;
+    font-size: 0.9em;
+}
+
+.forgot-prompt a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    bottom: 15px;
+}
+
+.box p {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+    letter-spacing: 3px;
+}
+
+.social-buttons {
+    margin-top: 15px;
+}
+
+
+.social-buttons button {
+    opacity: 0.9;
+    margin-top: 8px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.social-buttons button:hover {
+    transform: scale(1.02);
+}
+
+.social-buttons button img {
+    height: 16px;
+    width: 16px;
+}
+
+/* Specific button colors */
+.google {
+    background: #ffffff33;
+    color: #f1f1f1;
+}
+
+.facebook {
+    background: #3b599877;
+}
+
+.apple {
+    background: #88888833;
+    color: #000;
+}
+
+h2 {
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+}
+
+.signup-prompt {
+    margin-top: 15px;
+    color: black;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-prompt a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 10px;
+    transition: color 0.3s;
+}
+
+
+.signup-prompt a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width:480px) {
+
+
+
+    body {
+
+        background-image: url(./img/bg-2.jpg);
+        background-blend-mode: hard-light;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .login {
+        display: inline-block;
+        height: auto;
+        width: 270px;
+        border: 1px solid black;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border-radius: 30px;
+        padding: 15px;
+        background-color: rgba(240, 248, 255, 0.301);
+        border: none;
+    }
+
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .head {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: black;
+        font-size: 10px;
+        font-family: inherit;
+        margin-bottom: 15px;
+    }
+
+    .tab {
+        display: flex;
+        justify-content: center;
+    }
+
+    tr {
+        padding: 10px;
+    }
+
+    .in {
+        display: flex;
+        padding-left: 15px;
+    }
+
+    input {
+        width: 150px;
+        padding: 7px;
+        border-radius: 50px;
+        border: none;
+        text-align: start;
+        padding-left: 10px;
+        padding-right: 30px;
+        border: none;
+        background-color: rgba(240, 248, 255, 0.352);
+    }
+
+    .forgot {
+        display: flex;
+        justify-content: end;
+        font-size: 12px;
+    }
+
+    .head h3 {
+        color: black;
+        font-size: 20px;
+    }
+
+    .forgot h3 {
+        font-size: 15px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    button {
+        width: 40%;
+        padding: 12px;
+        background-color: #222;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 105x;
+        transition: 0.3s;
+        letter-spacing: 1.5px;
+    }
+
+}
